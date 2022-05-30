@@ -18,15 +18,14 @@ h1{
     border-radius:5px;
 }
 #btn {
-    background-color:#fefefe;
     color:white;
     border-color:white;
     border-width:0;
     border-radius:5px;
-    margin:10px;
+    margin:5px;
+    padding:20px;
 }
 #ini {
-    background-color:rgba(0,255,255,.9);
     border:none;
     border-radius:5px;
 }
@@ -38,7 +37,7 @@ h1{
 .ss,#cal, #num{
     color:white;
     display:flex;
-    padding:30px;
+    padding:25px;
     margin:5px;
     border-radius:10px;
 }
