@@ -2,8 +2,8 @@
 <html>
     <head>
         <title>Dados</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
@@ -15,7 +15,7 @@
             
             <div id="cal"><button id="btn" onclick="fun()"></button></div>
                 
-            <div id="num"></div>
+            <div id="num"><p id="p"></p></div>
         </div>
         <div id="gan"></div>
     <script>
@@ -27,6 +27,7 @@
             document.getElementById("num").innerHTML="";
             document.getElementById("gan").innerHTML="";
             document.getElementById("ss","num","cal").style.border="none";
+            
             
         }
 
@@ -42,19 +43,24 @@
                 var i=l.indexOf(m)+1;
                 l=[];
                 return document.getElementById("gan").innerHTML="<b>GANA "+"el jugador "+i+"</b>";
+                document.getElementById("p").innerHTML="Gana el jugador que obtuvo primero la mayor cantidad";
             }
-            while (true){
-                var q=Math.floor(Math.random()*(6-1)+1);
-                if (l.includes(q)){
-                    
-                    continue
-                } else{
-                    l.push(q);
-                    document.getElementById("num").innerHTML="resultado: "+q+" \nArray: "+l;
-                    break
+            if (a<=6){
+                while (true){
+                    var q=Math.floor(Math.random()*(7-1)+1);
+                    if (l.includes(q)){
+                        continue
+                    } else{
+                        l.push(q);
+                        document.getElementById("num").innerHTML="resultado: "+q+"____\nArray: "+l;
+                        break
+                    }
                 }
+            } else{
+                var q=Math.floor(Math.random()*(7-1)+1);
+                l.push(q);
+                document.getElementById("num").innerHTML="resultado: "+q+"____\nArray: "+l;
             }
-            
             document.getElementById("btn").innerHTML="Tira el Siguiente Jugador ";
             
         }
