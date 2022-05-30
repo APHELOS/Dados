@@ -1,0 +1,59 @@
+body {
+    padding:0;
+    background-color:#efefef;
+    animation-name: cuerpo;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+@keyframes cuerpo {
+    25% {background-color: #CDCDCD;}
+    50% {background-color: #FFE6A2;}
+    75% {background-color: #80E5B1;}
+}
+
+h1{
+    font-family:Arial;
+    text-align:center;
+    border:4px dashed orange;
+    border-radius:5px;
+}
+#btn {
+    background-color:#fefefe;
+    color:white;
+    border-color:white;
+    border-width:0;
+    border-radius:5px;
+    margin:10px;
+}
+#ini {
+    background-color:rgba(0,255,255,.9);
+    border:none;
+    border-radius:5px;
+}
+#inp {
+    padding:5px;
+    border:none;
+    border-radius:10px;
+}
+.ss,#cal, #num{
+    color:white;
+    display:flex;
+    padding:30px;
+    margin:5px;
+    border-radius:10px;
+}
+#gan {
+    color:black;
+    font-family:Roboto,Aria,Cursive;
+    padding:10px;
+    margin:10px;
+    border-radius:10px;
+    text-align:center;
+    animation-name:gana;
+    animation-duration:2s;
+    animation-iteration-count:infinite ;
+}
+@keyframes gana{
+    50%{font-size:15pt;}
+    
+}
